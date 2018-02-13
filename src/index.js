@@ -1,3 +1,6 @@
+import Layout from './layout/index';
+import SpeakerList from './speakers/list/index';
+
 console.log('bonjour index')
 
 
@@ -9,3 +12,12 @@ talk.findAllSpeakers().then(speakers => {
 },
   error => console.log(error)
 );
+
+//Etape 3 Partials
+let layout = new Layout()
+console.log(layout)
+// let layout = new Layout()  
+layout.render()
+
+let speakerList = new SpeakerList()
+speakerList.render("main-view")
