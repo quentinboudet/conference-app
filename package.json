@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dist": "webpack",
-    "start": "webpack-dev-server",
+    "start": "concurrently \"webpack-dev-server\" \"json-server --watch db.json\"",
     "stop": "pkill --signal SIGINT myApp"
   },
   "repository": {
